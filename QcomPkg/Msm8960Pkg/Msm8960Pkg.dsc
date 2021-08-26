@@ -177,7 +177,7 @@
 
   GCC:*_*_ARM_PLATFORM_FLAGS == -march=armv7-a
 
-  RVCT:*_*_ARM_PLATFORM_FLAGS == --cpu Cortex-A8
+  RVCT:*_*_ARM_PLATFORM_FLAGS == --cpu Cortex-A9
 
 ################################################################################
 #
@@ -289,7 +289,7 @@
   gEmbeddedTokenSpaceGuid.PcdFlashFvMainBase                   |0x80300000
   gEmbeddedTokenSpaceGuid.PcdFlashFvMainSize                   |0x00200000
 
-  gArmPlatformTokenSpaceGuid.PcdFirmwareVendor                |"Qualcomm Msm8960 by BinSys"
+  gArmPlatformTokenSpaceGuid.PcdFirmwareVendor                |"Nvidia Tegra 3 by Vicc2008"
   #gArmPlatformTokenSpaceGuid.PcdFirmwareVendor|"ARM Juno"
   
   gArmTokenSpaceGuid.PcdVFPEnabled                             |0x01
@@ -308,7 +308,7 @@
  #
   # ARM OS Loader
   #
-  gArmPlatformTokenSpaceGuid.PcdDefaultBootDescription|L"Boot Windows From eMMC"
+  gArmPlatformTokenSpaceGuid.PcdDefaultBootDescription|L"Boot Windows RT From eMMC"
   gArmPlatformTokenSpaceGuid.PcdDefaultBootDevicePath|L"VenHw(B615F1F5-5088-43CD-809C-A16E52487D00)/HD(26,GPT,559FDB18-CC5F-41EC-8A3D-FD5DE9C7089B,0xA60000,0x32000)/\\efi\\boot\\bootarm.efi"
   #gArmPlatformTokenSpaceGuid.PcdFdtDevicePath|L"VenHw(E7223039-5836-41E1-B542-D7EC736C5E59)/juno.dtb"
   #gArmPlatformTokenSpaceGuid.PcdDefaultBootArgument|"DEBUG BOOTDEBUG DEBUGPORT=COM3 BAUDRATE=115200 REDIRECT=COM3 REDIRECTBAUDRATE=115200 DISABLE_INTEGRITY_CHECKS TESTSIGNING"
@@ -329,7 +329,7 @@
   #VenVt100()
 [PcdsPatchableInModule]
   # Console Resolution (Full HD)
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|720
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|800
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|1280
   
 ################################################################################
